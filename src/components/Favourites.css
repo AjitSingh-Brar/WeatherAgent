@@ -1,0 +1,197 @@
+.favourites {
+  background-image: url("../images/clear-sky.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.favourites__background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(32, 30, 30, 0.3);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+}
+
+.favourites__top {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.favourites__top .favourites__logo {
+  max-height: 110px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.favourites__logo > img {
+  height: 100%;
+}
+.favourites__searchIcon {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.favourites__searchIcon .MuiSvgIcon-root {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.favourites__bottom {
+  width: 100vw;
+  height: 100vh;
+}
+
+.favourites__bottom h1 {
+  text-align: center;
+  margin: 20px;
+  font-weight: 200;
+  color: white;
+}
+
+.favourites__containers {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  margin: 30px 10px;
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  border-top: 2px solid whitesmoke;
+}
+
+.favourites__containers::-webkit-scrollbar {
+  width: 10px;
+}
+
+.favourites__containers::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.favourites__containers::-webkit-scrollbar-thumb {
+  background-color: #606568;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  margin: 10px 5px;
+}
+
+.favourites__containers::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.favourites__containers .favourites__cityTile {
+  background: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+  padding: 30px;
+  transition: transform 250ms ease-in-out 0s;
+}
+
+.favourites__cityTile:hover {
+  transform: scale(1.03);
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.favourites__cityName h3 {
+  font-size: 30px;
+}
+
+.favourites__temperature {
+  display: flex;
+  align-items: center;
+}
+
+.favourites__temperature span {
+  font-size: 30px;
+}
+
+.favourites__temperature img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.favourites__tempDescription {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.favourites__weatherType,
+.favourites__maxTemperature,
+.favourites__minTemperature,
+.favourites__humidity {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favourites__weatherType p,
+.favourites__maxTemperature p,
+.favourites__minTemperature p,
+.favourites__humidity p {
+  line-height: 1.5rem;
+}
+
+.favourites__button {
+  display: flex;
+  justify-content: center;
+}
+
+.favourites__removeButton {
+  background: #ffab00;
+  padding: 15px 40px;
+  border-radius: 5px;
+  transition: all 250ms ease-in-out 0s;
+}
+
+.favourites__removeButton:hover {
+  background-color: #ffbd3a;
+}
+
+@media screen and (max-width: 1110px) {
+  .favourites__top .favourites__logo {
+    max-height: 90px;
+    margin-top: 30px;
+    margin-left: 1px;
+  }
+  .favourites__containers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .favourites__bottom h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .favourites__containers {
+    margin: 0 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
