@@ -1,0 +1,132 @@
+.loading {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.loading__top {
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading__logo {
+  max-height: 110px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.loading__logo > img {
+  height: 100%;
+}
+
+.loading__searchIcon {
+  flex: 0.1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loading__searchIcon .MuiSvgIcon-root {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.loading__main {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading__heading {
+  margin-top: 100px;
+}
+
+.loading__heading h2 {
+  font-size: 60px;
+  font-weight: 100;
+  font-family: "Lexend", sans-serif;
+  margin-bottom: 30px;
+}
+
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.loading__image {
+  border-radius: 60px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.loading__image span {
+  display: block;
+}
+
+.bar {
+  background: rgba(199, 191, 191, 0.363);
+}
+
+.progress {
+  animation: loader 2.5s ease forwards;
+  /* // Change the animation fill mode 'infinite' to 'forwards' to stop the animation from repeating. */
+  background: #eaece6;
+  color: #fff;
+  padding: 2px;
+  width: 0;
+}
+
+.progress-bar {
+  max-width: 10%;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.loading__bottom {
+  margin-top: 300px;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1110px) {
+  .loading__logo {
+    max-height: 90px;
+    margin-top: 30px;
+    margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .loading__heading h2 {
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "Lexend", sans-serif;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .loading__heading h2 {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: "Lexend", sans-serif;
+    margin-bottom: 30px;
+  }
+}
