@@ -1,5 +1,18 @@
 ## Weather Agent
 
+Goal: To build a single page application, which shows the current weather of the city the user has looked up.
+
+## User Scenarios
+
+1. This react application allows the user to enter the city name and serach for the current weather
+2. Once the user enters the city name, after clicking the icon button. It searches for the data from the https://openweathermap.org/api  API.
+3. Once it searches for data successfully, it adds the data into the Redux (state management) which can be used and pass into other components.
+4. The data is fetched from the Redux, via the useSelector Hook. Hence, it is shown on the actial search page
+5. Even the user is allowed to add the current city with weather details on the Favourite page which enlists the whole list. 
+6. User can redirect to the Favoruite Page via (Sow to your) button. It allows user to views the list of the added cities. 
+7. User is given the authority to remove the particular city if not needed.
+8.  Finally, The application was made responsive and workable on all browsers.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
