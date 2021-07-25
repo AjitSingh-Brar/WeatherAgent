@@ -36,7 +36,7 @@ const Loading = () => {
     currentTime.getDate() +
     " " +
     currentMonth[currentTime.getMonth()] +
-    "," +
+    ", " +
     currentTime.getFullYear();
 
   const dayName = currentDay[currentTime.getDay()];

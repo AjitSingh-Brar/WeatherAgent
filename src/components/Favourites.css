@@ -1,5 +1,5 @@
 .favourites {
-  background-image: url("../images/clear-sky.jpg");
+  background-image: url("../images/snow-sky.jpg");
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -93,87 +93,6 @@
   background-color: #a8bbbf;
 }
 
-.favourites__containers .favourites__cityTile {
-  background: whitesmoke;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: black;
-  padding: 30px;
-  transition: transform 250ms ease-in-out 0s;
-}
-
-.favourites__cityTile:hover {
-  transform: scale(1.03);
-}
-
-.top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.favourites__cityName h3 {
-  font-size: 30px;
-}
-
-.favourites__temperature {
-  display: flex;
-  align-items: center;
-}
-
-.favourites__temperature span {
-  font-size: 30px;
-}
-
-.favourites__temperature img {
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-}
-
-.favourites__tempDescription {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-}
-
-.favourites__weatherType,
-.favourites__maxTemperature,
-.favourites__minTemperature,
-.favourites__humidity {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.favourites__weatherType p,
-.favourites__maxTemperature p,
-.favourites__minTemperature p,
-.favourites__humidity p {
-  line-height: 1.5rem;
-}
-
-.favourites__button {
-  display: flex;
-  justify-content: center;
-}
-
-.favourites__removeButton {
-  background: #ffab00;
-  padding: 15px 40px;
-  border-radius: 5px;
-  transition: all 250ms ease-in-out 0s;
-}
-
-.favourites__removeButton:hover {
-  background-color: #ffbd3a;
-}
 
 @media screen and (max-width: 1110px) {
   .favourites__top .favourites__logo {
@@ -194,4 +113,5 @@
     margin: 0 20px;
     grid-template-columns: repeat(1, 1fr);
   }
+
 }

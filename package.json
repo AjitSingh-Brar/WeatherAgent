@@ -17,6 +17,7 @@
     "@types/react-redux": "^7.1.18",
     "@types/react-router-dom": "^5.1.8",
     "animate.css": "^4.1.1",
+    "firebase": "^8.8.0",
     "radium": "^0.26.1",
     "react": "^17.0.2",
     "react-animations": "^1.0.0",
