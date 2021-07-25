@@ -65,7 +65,7 @@
   bottom: 0;
   right: 0;
   overflow: auto;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-name: fadeInRight;
 }
 
@@ -257,7 +257,7 @@
     justify-content: flex-end;
   }
   .search__leftHeading h1 {
-    font-size: 150px;
+    font-size: 100px;
   }
 
   .search__rightContainer {
@@ -299,7 +299,7 @@
 /* media queries */
 @media screen and (max-width: 800px) {
   .search__leftHeading h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .search__leftDetails span {
