@@ -2,6 +2,9 @@
 
 Goal: To build a single page application, which shows the current weather of the city the user has looked up.
 
+## Deployed application
+Link: https://weather-agent-d225f.web.app/
+
 ## User Scenarios
 
 1. This react application allows the user to enter the city name and serach for the current weather
